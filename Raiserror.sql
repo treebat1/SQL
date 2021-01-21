@@ -1,0 +1,1 @@
+RAISERROR ('Now that''s what I call a message!', 11, 1) WITH NOWAIT

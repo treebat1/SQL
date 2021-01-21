@@ -1,0 +1,1 @@
+alter database cal_pt_us set emergency

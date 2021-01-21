@@ -1,0 +1,1 @@
+dbcc tracestatus(-1)

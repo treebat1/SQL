@@ -1,0 +1,1 @@
+sp_fulltext_recycle_crawl_log 'ftcatalog'

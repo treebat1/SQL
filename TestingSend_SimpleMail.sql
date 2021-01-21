@@ -1,0 +1,1 @@
+EXEC master.dbo.Send_SimpleMail @subject='Test',@body='Test',@to='sev1support@certona.com',@from='support@certona.com',@dbid=0

@@ -1,0 +1,1 @@
+﻿Invoke-Sqlcmd -InputFile "D:\P_Drive\Temp\CodeGeneration.sql" -ServerInstance "chdc-car-thsql2\datamartdev" | Out-File -FilePath "D:\P_Drive\Temp\CodeGeneration.txt"

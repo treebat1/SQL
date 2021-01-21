@@ -1,0 +1,1 @@
+sp_dboption staples, read_only, 'false'

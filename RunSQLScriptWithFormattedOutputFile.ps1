@@ -1,0 +1,2 @@
+﻿$data=invoke-sqlcmd -InputFile "D:\P_Drive\SQL2016Migration\PackageStore\CopySSISPackagesWithDTUtil.sql" -ServerInstance "10.174.110.218\datamartdev" 
+$data | %{'{0}' -f $_[0] } | Out-File -Encoding ASCII -FilePath "D:\P_Drive\SQL2016Migration\PackageStore\CodeGeneration.bat"

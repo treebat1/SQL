@@ -1,0 +1,1 @@
+disable TRIGGER [Trg_LogDDLEvent] ON DATABASE
