@@ -8,7 +8,7 @@ PROD.system_type_name as PROD_Datatype,
 DEV.is_identity_column as DEV_is_identity, 
 PROD.is_identity_column as PROD_is_identity  
 FROM sys.dm_exec_describe_first_result_set (N'SELECT * FROM ccar.ds_ccar_wholesale_frb_edits_cil', NULL, 0) DEV 
-FULL OUTER JOIN  sys.dm_exec_describe_first_result_set (N'SELECT * FROM ws_datamart.ccar.ds_ccar_wholesale_frb_edits_cre', NULL, 0) PROD 
+FULL OUTER JOIN  sys.dm_exec_describe_first_result_set (N'SELECT * FROM db1.ccar.ds_ccar_wholesale_frb_edits_cre', NULL, 0) PROD 
 ON DEV.name = PROD.name 
 GO
 
