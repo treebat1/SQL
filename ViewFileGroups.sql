@@ -28,7 +28,6 @@ and d.name not in ('distribution','tempdb','model','master','msdb','ASP_NET_Sess
 --,'Monitor')
 --AND d.name NOT LIKE '%Part'
 and mf.state = 0  -- only online
---AND d.name NOT LIKE '%Avenue%'
 --AND mf.name LIKE '[D-Z]%'
 order by d.name
 
@@ -85,11 +84,11 @@ set @sql = N'ALTER DATABASE [' + @Name + '] SET COMPATIBILITY_LEVEL = 130'
 
 
 /*
-set @sql = N'use ' + @name + '; if exists (select * from sys.objects where name like ''Personalized_SearchTerm'' and type = ''u'') select DB_Name()'
+set @sql = N'use ' + @name + '; if exists (select * from sys.objects where name like '''' and type = ''u'') select DB_Name()'
 */
 
 /*
-set @sql = N'use ' + @name + '; if exists (select * from sys.objects where name like ''Behavior_Events'' and type = ''u'') select DB_Name()'
+set @sql = N'use ' + @name + '; if exists (select * from sys.objects where name like '''' and type = ''u'') select DB_Name()'
 */
 
 
