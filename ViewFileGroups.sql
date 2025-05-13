@@ -30,7 +30,6 @@ and d.name not in ('distribution','tempdb','model','master','msdb','ASP_NET_Sess
 and mf.state = 0  -- only online
 --AND d.name NOT LIKE '%Avenue%'
 --AND mf.name LIKE '[D-Z]%'
---AND mf.name = 'agjeans'
 order by d.name
 
 
